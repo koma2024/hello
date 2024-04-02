@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+body {
+    font-family: emoji;
+    font-weight: 800;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p.lead {
+    color: darkgreen;
+    font-size: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container.head {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    perspective: 1000px;
+    height: 100%;
   }
+  .card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 62%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
   }
+  
+  .card-front,
+  .card-back {
+    backface-visibility: hidden;
+  }
+  .card.card1 {
+    background-color: cadetblue;
 }
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    margin: 22px;
+}
+h3 {
+    font-family: cursive;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-inner {
+    padding: 20px;
+  }
+  
+  .card-front, .card-back {
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover .card-front {
+    opacity: 0;
+  }
+  
+  .card:hover .card-back {
+    opacity: 1;
+  }
+ 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 22px 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 52px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-inputs input[type="text"],
+  .contact-inputs input[type="email"],
+  .contact-inputs textarea {
+    margin-bottom: 15px;
+  }
+  
+  .contact-inputs input[type="submit"] {
+    width: 100%;
+  }
+  
