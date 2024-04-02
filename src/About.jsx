@@ -1,8 +1,11 @@
 // About.js
 import React from 'react';
+import Header from './Header';
 
 const About = () => {
-  return (
+  return ( 
+    <>
+    <Header />
     <div id="about" className="py-6 bg-light about-section">
       <div className="container">
         <h2 className="text-center mb-4"  style={{ textShadow: "5px 5px 10px green" }}>About Me</h2>
@@ -68,6 +71,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

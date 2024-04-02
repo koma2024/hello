@@ -15,7 +15,7 @@ const Footer = () => {
               <li><a href="#"><FaTwitter /></a></li>
               <li><a href="#"><FaFacebook /></a></li>
               <li><a href="#"><FaInstagram /></a></li>
-              <li> <a href="#"><FaGithub /> </a> </li>
+              <li> <a href="https://github.com/koma2024"><FaGithub /> </a> </li>
             </ul>
           </div>
         </div>

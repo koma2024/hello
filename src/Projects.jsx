@@ -1,7 +1,9 @@
 import React from 'react';
+import Header from './Header';
 
 const Projects = () => {
-  return (
+  return ( <>
+  <Header />
     <div id="projects" className="py-5 bg-light">
       <div className="container">
         <h2 className="text-center mb-4"  style={{ textShadow: "5px 5px 10px green" }}>My Projects</h2>
@@ -63,6 +65,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
