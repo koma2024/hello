@@ -114,9 +114,9 @@ h3 {
     max-width: 500px;
     margin: 52px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #efe9e9;
   }
   
   .contact-inputs {
@@ -133,4 +133,9 @@ h3 {
   .contact-inputs input[type="submit"] {
     width: 100%;
   }
-  
+  input.form-control {
+    border: none;
+}
+textarea.form-control {
+  border: none;
+}

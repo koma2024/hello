@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
     <Header />
-    <div className="container">
+    <div className="container contact">
       <div className="contact-form">
         <form
           action="https://formspree.io/f/xdoqwbbw"
