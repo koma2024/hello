@@ -15,7 +15,7 @@ function HeroSection() {
 
         <div className="col-md-6">
           <div className="text-center">
-            <img src="http://surl.li/segus" alt="Developer" className="img-fluid rounded-circle" style={{ maxWidth: '57%', height: 'auto' }} />
+            <img src="http://surl.li/segus" alt="Developer" className="img-fluid rounded-circle" style={{ maxWidth: '74%', height: 'auto' }} />
           </div>
         </div>
       </div>
